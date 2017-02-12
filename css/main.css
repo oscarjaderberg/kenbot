@@ -467,3 +467,37 @@ svg {
     transition: all .25s;
 }
 .highlight {margin-bottom:100px;}
+
+@media only screen and (max-width: 500px) {
+     
+    #kenRing  {
+        padding-left: 30px;
+    }
+    
+    #myTextDiv {
+    z-index: 1000;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    /* font-weight: bold; */
+    /* left: 100px; */
+    top: 300px;
+    padding: 20px;
+    width: 250px
+    }
+    .svg .button {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    margin: 20px;
+    overflow: hidden;
+    margin-top: 140px;
+    margin-left: 25px;
+}
+
+
+}
+
