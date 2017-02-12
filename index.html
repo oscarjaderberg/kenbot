@@ -9,7 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-grid.min.css">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -23,30 +23,24 @@
         <!-- Add your site or application content here -->
     
         
-      <div class="container-fluid">
-          <div class="row justify-content-md-center">
-              <div class="col col-lg-2"></div>
-                <div class="col-12 col-md-auto">
-                    <div id="ImageDiv"><img id="dynamic" width="200px" height="auto"></div>
-             <div class="col col-lg-2"></div>
+      
+        <div id="container">
+        
+        <div id="ImageDiv"><img id="dynamic" width="200px" height="auto"></div>
+        <div id="myTextDiv"><span id="span"><p id="quote"></p></span></div></div>
+          <div id="kenRing">
+              
+              <div class="svg">
+		<a class="button" onclick="pickRandomQuote()">
+				<svg>
+						<rect height="40" width="130" fill="transparent" />
+				</svg>
+				<span>Hey</span>
+		</a>
               </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-12 col-md-auto">
-                <div id="myTextDiv"><span id="span"><p id="quote"></p></span></div>
-              </div>
-            <div class="col col-lg-2"></div>
-                </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-12 col-md-auto">
-                <div id="kenRing">
-                    <button onclick="pickRandomQuote()" id="utton">Hey</button>
-                </div>
-                </div>
-                <div class="col col-lg-2"></div>
-            </div>  
-       </div>
+            
+        </div>
+        
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
