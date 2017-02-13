@@ -15,19 +15,20 @@ $('div.container-fluid').click(function(){
     
     nextQuote.push(randomize);
     
-   var randomizeImg = images[Math.floor(Math.random() *8)];
+    var randomizeImg = images[Math.floor(Math.random() *8)];
     
     var mydiv = document.getElementById("myTextDiv");
      mydiv.appendChild(document.createTextNode(nextQuote[0]));
-  var img = document.createElement('img'); 
-img.setAttribute('class', 'img-responsive center-block');
-img.setAttribute('src', randomizeImg);
+    var img = document.createElement('img'); 
+    img.setAttribute('class', 'img-responsive center-block');
+    img.setAttribute('src', randomizeImg);
     document.getElementsByTagName('div')[2].appendChild(img);
     
-
-   
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'click',
+        eventAction: 'nextQuote'
+    });
   });
 });
-  
-
 
