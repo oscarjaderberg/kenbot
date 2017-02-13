@@ -12,9 +12,9 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/quotes.js"></script>
-        <!-- adding a comment -->
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -25,19 +25,19 @@
     
         
       
-        <div id="container">
+        <div class="container-fluid" id="KENRING">
+            <div class="row">
+            <div class="col-md-12" id="ImageDiv">
+                <img class="img-responsive" id="dynamic" src="">
+                </div>
+            </div>
         
-        <div id="ImageDiv"><img id="dynamic" width="200px" height="auto"></div>
-        <div id="myTextDiv"><span id="span"><p id="quote"></p></span></div></div>
-          <div id="kenRing">
-              
-              <div class="svg">
-		<a class="button" onclick="pickRandomQuote()">
-				<svg>
-						<rect height="40" width="130" fill="transparent" />
-				</svg>
-				<span>Hey</span>
-		</a>
+        
+        <div class="row">
+            <div class="col-md-12" id="myTextDiv">KENBOT CLICK</div></div>
+          
+            <div class="row"><div class="col-xs-3"></div><div class="col-xs-6"></div>
+        
               </div>
             
         </div>
@@ -48,7 +48,6 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
